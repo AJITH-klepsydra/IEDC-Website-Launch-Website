@@ -1,0 +1,51 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+#full {
+  position: relative;
+}
+
+#btn {
+  height: 50px;
+  width: 200px;
+  color: black;
+  background-color: #fbe504;
+  border: 5px solid black;
+  border-radius: 20px;
+  font-family: Georgia;
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+#sky {
+  display: none;
+}
+
+#rocket {
+  position: absolute;
+  bottom: -45%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  animation-duration: 4s;
+  animation-fill-mode: forwards;
+  animation-timing-function: ease-in;
+}
+
+@keyframes launch {
+  100% {
+    transform: translateY(-1000%);
+  }
+}
