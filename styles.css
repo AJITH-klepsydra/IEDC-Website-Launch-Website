@@ -20,6 +20,12 @@
   font-size: 2em;
 }
 
+#btn:hover {
+  border: 3px dotted #fbe504;
+  color: #fbe504;
+  background: black;
+}
+
 .center {
   margin: 0;
   position: absolute;
